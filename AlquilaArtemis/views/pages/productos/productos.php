@@ -25,43 +25,32 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
+                <table id="example1" class="table table-bordered table-striped text-center">
                   <thead>
                   <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th>Platform(s)</th>
-                    <th>Engine version</th>
-                    <th>CSS grade</th>
+                    <th>Productos</th>
+                    <th>Stock</th>
+                    <th>Precio c/u</th>
+                    <th>Ajustes</th>
                   </tr>
                   </thead>
-                  <tbody>
+                  <tbody class="">
                   <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 4.0
+                    <td>Martillo</td>
+                    <td>17</td>
+                    <td>10000</td>
+                    <td class="text-center">
+                      <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                      <button class="btn btn-secondary"><i class="fas fa-edit"></i></button>
                     </td>
-                    <td>Win 95+</td>
-                    <td> 4</td>
-                    <td>X</td>
-                  </tr>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 5.0
-                    </td>
-                    <td>Win 95+</td>
-                    <td>5</td>
-                    <td>C</td>
-                  </tr>                  
+                  </tr>                 
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th>Platform(s)</th>
-                    <th>Engine version</th>
-                    <th>CSS grade</th>
+                    <th>Productos</th>
+                    <th>Stock</th>
+                    <th>Precio c/u</th>
+                    <th>Ajustes</th>
                   </tr>
                   </tfoot>
                 </table>
@@ -106,16 +95,7 @@
                       </div>
                       <input type="number" class="form-control" id="inputPrecio" placeholder="Precio">
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <label>Clientes</label>
-                    <select class="form-control select2" style="width: 100%;">
-                      <option selected="selected">Clientes</option>
-                      <option>Marval (Ejemplo)</option>
-                      <option>HG (Ejemplo)</option>
-                      <option>Valco (Ejemplo)</option>
-                    </select>
-                  </div>
+                  </div>                
                 </div>
                 <!-- /.card-body -->
 
