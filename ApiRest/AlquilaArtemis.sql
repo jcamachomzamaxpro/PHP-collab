@@ -74,12 +74,11 @@ CREATE TABLE
         FechaInventario DATE NOT NULL,
         TipoOperacion VARCHAR(50) NOT NULL
     );
-CREATE TABLE Productos(
-    Producto_ID PRIMARY KEY INT AUTO_INCREMENT,
-    Producto_nombre VARCHAR(60) NOT NULL,
-    Producto_descripcion VARCHAR(500) NOT NULL,
-    Producto_precio FLOAT NOT NULL,
-    Producto_stock INT NOT NULL
+CREATE TABLE productos(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(60) NOT NULL,
+    stock BIGINT NOT NULL,
+    precio BIGINT NOT NULL
 );
 CREATE TABLE
     Usuario(
@@ -107,7 +106,7 @@ CREATE TABLE
         Telefono VARCHAR(60) NOT NULL,
     );
 
-CREATE Cotizacion(
+CREATE TABLE Cotizacion(
     Cotizacion_ID PRIMARY KEY INT AUTO_INCREMENT 
     Cotizacion_fecha DATE NOT NULL,
     ClienteCoti INT NOT NULL,
@@ -119,4 +118,5 @@ CREATE Cotizacion(
     FOREIGN KEY (ObraCoti) REFERENCES Obra(Obra_ID)
 );
 
+INSERT INTO `productos` (`id`, `nombre`, `stock`, `precio`) VALUES (1, 'Ladrillos', 105, 12000);
 /*vistas salidas entradas inventario li */

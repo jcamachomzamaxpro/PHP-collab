@@ -3,6 +3,7 @@
 
 $rutas = explode("/", $_SERVER['REQUEST_URI']);
 $rutas = array_filter($rutas);
+
 ?>
 
 <!DOCTYPE html>
